@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+    <style>
+        *{margin:0px; font-family:Roboto, "system-ui", sans-serif; ;}
+          /* --------------------------------------------header part---------------------------------------------- */
+     /* --------------------------------------------header part---------------------------------------------- */
+     #head-part{height:100px; width:100%; 
+    background-color: #E42529; 
+    display:flex;}
+
+.left-head{height:100px; width:18%;}
+
+.middle-head{height:100px;
+     width:40%;
+     
+       margin-left:6%;
+    }
+
+.search{  
+    margin-top:40px;
+    width:70%;
+    height:37px;
+    border:none;
+    margin-left:20px;
+    font-size: 16px;
+    padding-left: 16px;
+}
+.search-btn{height:37px; width:20%;
+     border:none; margin-left:-4px; 
+     background-color: #44ADFB; 
+     color:white;}
+
+.right-head{height:100px; width:35%;
+     margin-left:1%;}
+
+.left-head>img{display:block; margin: auto;
+     margin-top:40px;
+     width:150px; cursor: pointer;}
+.top{height:44px; margin-top:8px; 
+    display: flex;
+     justify-content: flex-end;
+    }
+
+.top ul li{display:inline; }
+
+.top ul li a{text-decoration: none;
+     padding:10px; color:white; 
+     font-weight: bold;
+    }
+.bottom{height:44px; margin-top:8px; 
+    display: flex;
+     justify-content: flex-end;
+    }
+    .bottom ul li{display:inline; }
+    .bottom ul li a{text-decoration: none;
+     padding:10px; color:white; 
+     font-weight: bold;
+    }
+.right-head span{color:white; font-size:20px;}
+/* -------------------header end----------------------------- */
+/* ---------------------navbar------------------------------------- */
+#nav-bar{height:40px; 
+display:grid;
+grid-template-columns: repeat(8,1fr);
+grid-template-rows: auto;
+gap: 20px;
+background-color: #1F4985;
+align-items: center;
+justify-content: space-around;
+
+}
+#nav-bar> div{font-size: 13px; 
+    height:40px;
+     line-height: 40px;
+      text-align: center; 
+      color:white;
+      font-weight: bold;
+     cursor: pointer;
+    }
+#nav-bar>div:hover{background-color: #E42529; }
+
+
+
+
+/* ---------------------------nav bar end--------------------------------- */
+/* ---------------------------nav bar end--------------------------------- */
+    
+
+    #navhead{height:30px; width:100%; 
+        background-color: #F9F9FA;}
+
+    #navhead>a{text-decoration: none; 
+        margin-left:20px; color:black;
+         line-height: 30px;;}
+
+    #part{height:800px; width:100%; 
+        display: flex; 
+        border-top:1px solid grey;
+        border-bottom:1px solid grey;}
+
+        #left{height:600px; width:35%; 
+            }
+
+        /* #first-box{height:320px;} */
+
+             #first-box>img{height:300px; width:65%;
+                 display: block; margin: auto;}
+       
+        #second-box{height:120px; 
+              display: flex;
+             align-items: center; justify-content: space-between;}
+             
+             #left-button{height:100px; width:7%; 
+                 margin-left:10px; 
+            display:flex; align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+                #right-button{height:100px; width:7%; 
+                margin-right:10px;
+                display:flex; align-items: center; 
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+
+                .cent{margin: auto; font-size:30px;}
+               
+          /* right side box */
+
+               #right{height:800px; width:63%; margin-left:2%;}
+
+               #right-head{height:160px;
+                 border-bottom:0.5px solid grey;}
+
+            .clr{color:#FFA41B;}
+
+            #right-head>p{margin-top:10px; color:grey;}
+
+            #right-head>h4{font-size:20px;}
+
+            .review{color:#1F4985; font-weight:bold;}
+
+            .checkbox{height:20px; width:20px;}
+
+            #right-head>span{margin-left:10px;}
+
+            .compare{font-size:20px;}
+
+            .short-line{font-size:25px;}
+
+            .long-line{font-size:30px;}
+
+            .share{color:#337AB7; font-size:25px;}
+
+            /* parts of right side */
+
+            #right-box{height:600px; width:100%;
+                  display: flex;}
+
+                 #left-side{height:600px; width:50%; 
+                    border-right:0.5px solid grey;}
+
+                 #left-side{height:600px; width:50%;}
+
+                 h5{margin-top:10px; font-size:17px; margin-left:23px;}
+
+                 ul{ color:grey;}
+
+                 ul li{margin-top:10px;}
+
+                 .color{color:#337AB7; text-decoration: none;}
+
+                 .color:hover{text-decoration: underline;}
+
+                 .see-more{margin-left:20px;}
+
+                 .see-more:hover{text-decoration: underline;}
+
+                 strong{ margin-left:20px;}
+
+                 #pincode{border:1px solid blue;
+                     height:40px; width:80%;
+                      border-radius:5px; display:flex;
+                    align-items: center; justify-content: space-around;}
+
+                    .pin{height:25px; border:none;}
+                    
+
+                    .btn1{height:40px; width:40%;
+                         margin-top:10px; border:none;
+                         border-radius:5px; color:white;
+                          background-color: #E42529;}
+                          .btn1:hover{background-color: #1F4985;}
+
+                    .btn2{height:40px; width:40%;
+                         margin-top:10px; border:none; color:white;
+                         margin-left:8px; border-radius:5px;
+                         background-color: #FC6027;}
+
+                         .strike{text-decoration: line-through;}
+
+                     .greentext{color:#467348; 
+                        font-size:20px; 
+                        font-weight:bold;}
+
+                         #right-side{padding:20px;}
+                         
+
+                         #right-side>h4{font-size: 25px; color:#1F4985;}
+
+                         /* middle section part */
+
+                         #nav-middle{height:40px;width:30%;
+                            display: grid;
+                            
+                        grid-template-columns: repeat(3,1fr);
+                        align-items: center;
+                        }
+                        .hold-border{border-top:4px solid #337AB7;
+                            height:40px; }
+
+                        #nav-middle>div{display:flex;
+                            align-items: center; margin-left:10px;}
+
+                        #nav-middle>div:hover{border-top:4px solid #337AB7;
+                            height:40px;}
+
+                        /* middle-container */
+                        #middle-box{ width:77%; }
+                        #middle-box>p{margin-left:20px; 
+                            margin-top:10px; color:grey;
+                            }
+
+                            #middle-box>h4{margin-left:20px; 
+                                margin-top:20px;}
+
+                            .camera-photp{width:70%; }
+
+                            .camera-photo>img{display:block;
+                                margin:auto; 
+                                margin-top:20px;}
+
+                            img~p{text-align: center; 
+                                color:grey;}
+
+                            .images{height:350px; width:100%;
+                                 margin-top:30px;}
+
+
+
+
+                        /* --------------------------------------------------------------------------------- */
+
+            /* Footer */
+
+    #fcontainer{
+        height: 500px;
+        width: 100%;
+        font-family: Roboto,"system-ui",sans-serif;
+        background-color: #1f4985;
+        margin: auto;
+        display: flex;
+        position: relative;
+        
+    }
+    .box1{
+        height: 430px; 
+        width: 25%;
+        /* border: 1px solid black; */
+        color: white;
+    }
+    .box1 > p {
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: 35px;
+    }
+    .box1 > h3 {
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .box2{
+        height: 300px; 
+        width: 25%;
+        /* border: 1px solid black; */
+        color: white;
+    }
+    .box2 > h3 {
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .box2 > p {
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: 35px;
+    }
+    .box3{
+        height: 300px; 
+        width: 25%;
+        /* border: 1px solid black; */
+        color: white;
+    }
+
+    .box3 > h3 {
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .box3 > p {
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: 35px;
+    }
+    
+
+    .box4{
+        height: 430px; 
+        width: 25%;
+        color: white;
+    }
+
+    .box4 > h3 {
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .box4 > p {
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: 35px;
+    }
+
+    .box5 > img{
+        height: 38px;
+        background-color: #1f4985;
+        margin-bottom: 90px;
+        margin-left: 35px;
+        border-radius: 5px;
+    
+    }
+   
+    .box5{
+        /* height: 25%;s */
+        width: 25%;
+        /* border: 1px solid yellow;    */
+        position: absolute;
+        bottom: 50px;
+        left: 350px;
+        bottom: -15%;
+        color: white;
+    }
+
+    .box5 > img {
+        margin-top: 20px;
+        width: 38%;
+        height: 40%;
+        margin-left: 0px;
+        margin-inline: 5px;
+        /* border: 2px solid red; */
+    }
+    .fa-facebook-f{
+        margin: 20px;
+        margin-right: 10px;
+        margin-left: 40px;
+    }
+    .fa-twitter{
+        margin: 20px 10px;
+    }
+    .fa-youtube{
+        margin: 20px 10px;
+    }
+    hr {
+        margin-top: 15px;
+        border: 0.01px solid;
+    }
+    .box6{
+        height: 80px;
+        width: 100%;
+        border: none;
+         border: 1px solid #0a244a;
+        background-color: #0a244a;
+        margin-top: none;
+    }
+    .box6>p{
+        margin-top: 15px;
+        color: white;
+        text-align: center;
+
+    }
+
+    .logo {
+        position: absolute;
+        left: 50px;
+        top: 22px;
+        width: 180px;
+    }
+  
+
+
+    </style>
+</head>
+<body>
+    <!-- --------------------------------------------header start------------------------------------ -->
+    <div id="head-part">
+        <div class="left-head">
+            <a href="/index.html"> <img class="logo" src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="logo"> </a>
+            
+        </div>
+        <div class="middle-head">
+            <input type="search" placeholder="Find your favourite products" class="search">
+            <input type="submit" class="search-btn" value="Search">
+        </div>
+        <div class="right-head">
+            <div class="top">
+                <ul type="none">
+                    <li><a href=""><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp;Find a store</a></li>
+                    <span>|</span>
+                    <li><a href="">Buying guides</a></li>
+                    <span>|</span>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul type="none">
+                    <li><a href=""><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp; Deliver Location</a></li>
+                    <span>|</span>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp;cart</a></li>
+                    <span>|</span>
+                    <li><a href="register.html"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------------------header end------------------------------------ -->
+
+    <!-- --------------------------nav bar start---------------------------------- -->
+   <div id="nav-bar">
+       <div class="dropdown">MOBILES & TABLETS&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i>
+         
+    </div>
+       <div>TV & AUDIO&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>
+       <div>HOME APPLIANCES&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>
+       <div>COMPUTERS&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>
+       <div>CAMERAS&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>
+       <div>KITCHEN APPLIANCES&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>
+       <div>PERSONAL CARE&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>
+       <div>ACCESSORIES&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></div>
+   </div>
+    <!-- ------------- --------------------------nav bar end---------------------------------- -->
+    <div id="container">
+        <div id="navhead">
+            <a href=""><i class="fa-solid fa-house-chimney">&nbsp;&nbsp;></i></a>
+            <a href="">Cameras&nbsp; ></a>
+            <a href="">DSLR Cameras &nbsp;></a>
+            <a href="">Nikon&nbsp; ></a>
+            <a href=""> Nikon D780 DSLR Camera with 24-120mm Lens Kit</a>
+        </div>
+        <div id="part">
+           <!-- left camera part start -->
+<div id="left">
+    <div id="first-box">
+        <img src="https://www.reliancedigital.in/medias/Nikon-D780-DSLR-Camera-with-24-120-mm-Lens-Kit-491630592-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMDQ5Mzd8aW1hZ2UvanBlZ3xpbWFnZXMvaDFiL2hmZi85MjUxNjQ1NzUxMzI2LmpwZ3w5MDFhNWY3Mjg4ZTY4ZGNiOWQ4MjE2ZGU3MDQxODkyMjkwMTcxZGQyYTI5NDhmMGFhYmVjZTMyYTkzM2FhMmU5" alt="Camera">
+    </div>
+    <div id="second-box">
+     <div id="left-button"><i class="fa-solid fa-angle-left cent"></i></div>
+     <div>
+         <img src="https://www.reliancedigital.in/medias/Nikon-D780-DSLR-Camera-with-24-120-mm-Lens-Kit-491630592-i-1-1200Wx1200H-96Wx96H?context=bWFzdGVyfGltYWdlc3wxOTExfGltYWdlL2pwZWd8aW1hZ2VzL2g4Yi9oNzIvOTI1MTY0NTgxNjg2Mi5qcGd8N2RlYzRkNTZkZGY4NzljOWI3ZGJiNmYxMTM1NTI4ZTYzZDM2MDMwZmQxYWFmY2IwZDZkOWMyZGM2YjBmNzRkYg" alt="Camera">
+     </div>
+     <div>
+         <img src="https://www.reliancedigital.in/medias/Nikon-D780-DSLR-Camera-with-24-120-mm-Lens-Kit-491630592-i-2-1200Wx1200H-96Wx96H?context=bWFzdGVyfGltYWdlc3wyMzEyfGltYWdlL2pwZWd8aW1hZ2VzL2gzYy9oZGEvOTI1MTY0NjQ3MjIyMi5qcGd8YTk3ODUzYjZiMTRlNjdjZDMyMDhhMWJmY2Y3ODYxYWM1YmYzZWIzMmRhYjNhMjI0M2M5MGJmMjM2YjMxMWQ2Yg" alt="Camera">
+     </div>
+     <div>
+         <img src="https://www.reliancedigital.in/medias/Nikon-D780-DSLR-Camera-with-24-120-mm-Lens-Kit-491630592-i-3-1200Wx1200H-96Wx96H?context=bWFzdGVyfGltYWdlc3wyNjMyfGltYWdlL2pwZWd8aW1hZ2VzL2g1ZS9oNDMvOTI1MTY0Njc5OTkwMi5qcGd8MTRjYWFjZWNkMjQ3ODgyOTY4MzQzOTkxMzM1YmE2Y2NkNTJmOTU3YWE4YTNhYjg3MDA0ZTRiYzk4YzRkNzYzZQ" alt="Camera">
+     </div>
+     <div id="right-button"><i class="fa-solid fa-angle-right cent"></i></div>
+    </div>
+    <div id="third-box">
+        <div id="third-subbox-a">
+            <i class="fa-solid fa-play"></i>
+        </div>
+        <div id="third-subbox-b">
+            <i class="fa-solid fa-tilde"></i>
+        </div>
+    </div>
+</div>
+<!-- left cmaera part end -->
+<!-- right side part start -->
+<div id="right">
+<div id="right-head">
+    <p>Article ID: 491630592</p><br>
+    <h4>Nikon D780 DSLR Camera with 24-120 mm Lens Kit</h4><br>
+    <i class="fa-solid fa-star clr"></i>
+    <i class="fa-solid fa-star clr"></i>
+    <i class="fa-solid fa-star clr"></i>
+    <i class="fa-solid fa-star clr"></i>
+    <i class="fa-solid fa-star clr"></i>
+    <span class="review">(1 Reviews)</span><br>
+    <input type="checkbox" class="checkbox">
+    <span class="compare">Add to Compare</span>
+    <span class="short-line">|</span>
+    <span class="share"><i class="fa-solid fa-share-nodes"></i></span>
+    <span class="long-line">|</span>
+    <span class="share"><i class="fa-solid fa-print"></i>&nbsp;&nbsp;Print</span>
+</div>
+<!-- right divisionin two parts -->
+  <div id="right-box">
+      <div id="left-side">
+          <h5>Gain more with offers (3)</h5>
+          <ul>
+              <li>Hurry up! Redeem your Maha 
+                  Cashback Points by April 30, 2022 Reliance online 
+                  Platforms before they expire! *T&C Apply. T&C</li>
+              <li>Get upto Rs.350 cashback through Mobikwik
+                   on minimum spend of Rs.5000.<a href="" class="color">T&C</a></li>
+              <li>Pay later with Simpl and avail 10% cashback. T&C</li>
+          </ul>
+          <h5>Save more with EMI/Cashback (1) T&C</h5>
+          <ul>
+              <li>EMIs (Credit Cards) from ₹9414.22/month | <a href="" class="color">View all Standard Credit Cards EMI options</a></li>
+              <li>Warranty: 2 Years manufacturer warranty</li>
+          </ul>
+          <h5>key features</h5>
+          <ul>
+              <li>Single-lens reflex digital camera Type</li>
+              <li>Nikon F mount, Nikon FX format, CMOS Image sensor type</li>
+              <li>Dust-reduction system, 24.5 million Effective pixels</li>
+              <li>Bluetooth v4.2 Connectivity, Photo live view, Movie live view Modes</li>
+          </ul>
+          <br>
+          <a href="" class="color see-more">See more >></a>
+          <br>
+          <span><strong>Got Feedback to share on this page?<a href="" class="color">report here</a></strong></span>
+        <a href=""></a>
+      </div>
+      <div id="right-side">
+          <h4>₹1,99,990.00</h4><br>
+          <span>MRP:</span>
+          <span class="strike">₹2,42,495.00</span>
+          <span>(Inclusive of all taxes)</span><br><br>
+          <p class="greentext">You Save: 18%(₹42,505)</p><br>
+          <p>EMIs (Credit Cards) from ₹9414.22/month |&nbsp;<a href="" class="color">View Plans</a></p><br>
+          <h3>FREE Shipping!</h3><br>
+          <div id="pincode">
+            <input type="text" placeholder="Pincode" class="pin">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          
+              <button class="btn1 btn">ADD TO CART</button>
+              <button class="btn2 btn">BUY NOW</button>
+              
+
+          
+      </div>
+  </div>
+</div>
+
+</div>
+
+    </div>
+    <!-- middle part section  -->
+    <div id="nav-middle">
+        <div class="hold-border">Description</div>
+        <div>Specifications</div>
+        <div>Customer Reviews</div>
+    </div>
+
+    <div id="middle-box">
+        <p>The Nikon D780 DSLT Camera with 24-120 mm Lens Kit with advanced features
+             can turn you into a professional photographer with fine quality snapshots
+              at every click. Express yourself with the D780. Experience high resolution 
+              and great low light shooting capabilities with 24.5 effective megapixels and 
+              an ISO of up to 51200 thanks to the backside illumination CMOS sensor and EXPEED 
+              6 image-processing engine. Great for astrophotography, this DSLR delivers extended
+               long exposure through shutter speed extensions of up to 900 s.
+                Its 8.12cm (3.2 inch) LCD display and 2359000dot resolution. Also its 5x zoom makes it easy to 
+            capture stunning landscapes, portraits, wedding photos and distant subjects when travelling.</p> 
+            <h4>FROM THE MANUFACTURER</h4>
+    <h5>Versatility meets Agility</h5>
+    <div class="camera-photo">
+        <img src="https://www.reliancedigital.in/medias/NIKON-D780-VBK560XN-DSLR-Camera-i-1?context=bWFzdGVyfGltYWdlc3wxNDg0ODh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE3L2g5Zi85MjUxNjMzNDMwNTU4LmpwZ3xjNTdjYWVmMTg3ZmFlZDZiYWFmOTE5NjRkM2FlNWY1MjJlYjE1MmFhOGE1YmU1OGQ4NmNkNDdkMTg4MjU0N2Rl" alt="Camera photo">
+       <p>* This NIKON D780 VBK560XN DSLR Camera image is for illustration purpose only. Actual image may vary.</p>
+    </div>
+  <p>  Introducing the next evolution of the Nikon FX-format DSLR. Inheriting Nikon’s 
+    top-of-the-line DSLR technology, the D780 brings your creative ventures and 
+    passionate works to life in high performance with 24.5 effective megapixels 
+    and the EXPEED 6 image-processing engine. Harness the power of speed and 
+    accuracy with two autofocus (AF) systems that allow for a more versatile 
+    and agile performance. Outstanding design meets cutting-edge operability 
+    with the introduction of optimised operation layout. Adapt to any shooting
+     situation with a durable body and smooth connectivity for even greater convenience.</p>
+     <img src="https://www.reliancedigital.in/medias/NIKON-D780-VBK560XN-DSLR-Camera-i-2?context=bWFzdGVyfGltYWdlc3w4NDcwOHxpbWFnZS9qcGVnfGltYWdlcy9oZjgvaDM4LzkyNTE2MzMzOTc3OTAuanBnfGI5ZWM2MDhhNWY1MjJiYjgxZTA1MTUzZTA3ODkxMmYyNmEyOTZlMmU3N2UxZjM1M2I0YzlkN2FkNWViZWU4ZTk" alt="" class="images">
+     <p>* This NIKON D780 VBK560XN DSLR Camera image is for illustration purpose only. Actual image may vary.</p>
+    </div>
+   
+
+    <!-- --------footer---------------------------------------------------------------------------------- -->
+    <div id="fcontainer">
+        <div class="box1">
+            <h3>PRODUCT CATEGORIES</h3>
+            
+              <p>Smartphones</p> 
+              <p>Laptops</p>
+              <p>DSLR Cameras</p>
+               <p>Televisions</p>
+               <p>Air Conditioners</p>
+               <p>Refrigerators</p>
+               <p>Kitchen Appliances</p>
+               <p>Accessories</p>
+               <p>Personal Care & Grooming</p>
+               <h3>FOLLOW US</h3>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            
+        </div>
+       <div class="box2 p-box">
+           <h3>SITE INFO</h3>
+    
+           <p>About Reliance Digital</p>
+           <p>resQ Services</p>
+           <p>Site Map</p>
+           <p>Gift Cards</p>
+           <p>Corporate Enquires</p>
+           <p>Contact Us</p>
+       </div>
+       <div class="box3 p-box">
+           <h3>RESOURCE CENTRE</h3>
+    
+           <p>Product Reviews</p>
+           <p>Buying Guides</p>
+           <p>How Tos</p>
+           <p>Featured Stories</p>
+           <p>Events & Happenings</p>
+       </div>
+       <div class="box4 p-box">
+           <h3>POLICIES</h3>
+    
+           <p>Terms of use</p>
+           <p>FAQs</p>
+           <p>Cancellations & Returns</p>
+           <p>Privacy policy</p>
+           <p>E-waste policy</p>
+           <p>EMI Terms & Conditions</p>
+           <p>Pricing and Payments Policy</p>
+           <p>JioMart Maha Cashback T & C</p>
+           <p>RelianceOne Loyalty T & C</p>
+       </div> 
+       <div class="box5 p-box">
+           <h3>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h3>
+           <img src="data:image/png;base64,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" alt="">
+    
+          
+           <img src="data:image/png;base64,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" alt="">
+       
+       </div>
+    
+    </div>
+    <div class="box6 p-box">
+       <hr/>
+       <p>© 2022 Reliance Digital. All Rights Reserved.</p>
+    
+    
+    </div>
+
+
+</body>
+<script>
+       var btn = document.querySelector("btn");
+       btn.addEventListener("click", function() {
+           console.log("Yes");
+        window.location.href = "cart.html";
+       });
+</script>
+</html>

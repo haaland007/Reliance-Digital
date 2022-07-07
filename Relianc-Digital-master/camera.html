@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./camera.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Online Electronic Shopping Store in India</title>
+    <style>
+      .img-cm {
+       margin-top: -10px;
+      }
+
+  #rel{
+      border: none;
+  }
+      /* Footer */
+
+    #fcontainer{
+        height: 500px;
+        width: 100%;
+        font-family: Roboto,"system-ui",sans-serif;
+        background-color: #1f4985;
+        margin: auto;
+        display: flex;
+        position: relative;
+        
+    }
+    .box1{
+        height: 430px; 
+        width: 25%;
+        /* border: 1px solid black; */
+        color: white;
+    }
+    .box1 > p {
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: 35px;
+    }
+    .box1 > h3 {
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .box2{
+        height: 300px; 
+        width: 25%;
+        /* border: 1px solid black; */
+        color: white;
+    }
+    .box2 > h3 {
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .box2 > p {
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: 35px;
+    }
+    .box3{
+        height: 300px; 
+        width: 25%;
+        /* border: 1px solid black; */
+        color: white;
+    }
+
+    .box3 > h3 {
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .box3 > p {
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: 35px;
+    }
+    
+
+    .box4{
+        height: 430px; 
+        width: 25%;
+        color: white;
+    }
+
+    .box4 > h3 {
+        margin-top: 20px;
+        font-size: 20px;
+        margin-left: 35px;
+    }
+    .box4 > p {
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: 35px;
+    }
+
+    .box5 > img{
+        height: 38px;
+        background-color: #1f4985;
+        margin-bottom: 90px;
+        margin-left: 35px;
+        border-radius: 5px;
+    
+    }
+   
+    .box5{
+        /* height: 25%;s */
+        width: 25%;
+        /* border: 1px solid yellow;    */
+        position: absolute;
+        bottom: 50px;
+        left: 350px;
+        bottom: -15%;
+        color: white;
+    }
+
+    .box5 > img {
+        margin-top: 20px;
+        width: 38%;
+        height: 40%;
+        margin-left: 0px;
+        margin-inline: 5px;
+        /* border: 2px solid red; */
+    }
+    .fa-facebook-f{
+        margin: 20px;
+        margin-right: 10px;
+        margin-left: 40px;
+    }
+    .fa-twitter{
+        margin: 20px 10px;
+    }
+    .fa-youtube{
+        margin: 20px 10px;
+    }
+    hr {
+        margin-top: 15px;
+        border: 0.01px solid;
+    }
+    .box6{
+        height: 80px;
+        width: 100%;
+        border: none;
+         border: 1px solid #0a244a;
+        background-color: #0a244a;
+        margin-top: none;
+    }
+    .box6>p{
+        margin-top: 15px;
+        color: white;
+        text-align: center;
+    }
+
+
+
+.fa-th-large{
+    background-color: #003380;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    /* background-color: rgb(235, 232, 232); */
+  }
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.dr-down {
+    width: 50%;
+}
+
+.redSearch {
+    height: 130px;
+    border: 1px solid red;
+    background-color: #e42529;
+    color: white;
+    position: relative;
+}
+
+.top {
+    width: 25%;
+    height: 30px;
+    color:  white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    margin-top: 15px;
+    padding: 16px 12px;
+
+}
+.fa-solid {
+color: white;
+font-size: 20px;
+margin-right: 5px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    font-weight: 700;
+}
+li {
+    display: flex; 
+    gap: 5px;
+    align-self: baseline;
+}
+ul > li > h2 {
+    padding-top: 0;
+    font-size: 130%;
+    font-weight: 100;
+}
+
+.bottom {
+    max-width: 95%;
+    margin: auto;
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.bottom img {
+    width: 186px;
+}
+.search {
+    display: flex;
+    width: 40%;
+    margin-left: 120px;
+    /* border: 2px solid yellowgreen; */
+    /* margin-right: 20px; */
+    position: relative;
+}
+
+.bottom > .search > input {
+    width: 75%;
+    height: 45px;
+    font-size: 18px;
+    padding-inline: 18px; 
+    /* border: 5px solid slateblue; */
+}
+.search-item{
+    /* border: 3px solid rgb(45, 255, 17); */
+    background-color: #44adfb;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 25%;
+    height: 45px;
+    margin-left: 0%;
+    padding: 0;
+    position: absolute;
+    right: -1px;
+    top: -5px;
+    /* margin-bottom: -30px; */
+}
+.cart-login {
+  width:500px;
+    height: 35px;
+     display: flex;
+     margin-left: 172px;
+     padding: 20px 5px;
+     align-items: center;
+     /* border: 2px solid yellow; */
+     font-size: 12px;
+}
+
+.silva{ 
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+}
+.cart-login ul h1 {
+  font-size: 36px;
+  width: 10px;
+  height: 20px;
+}
+
+/* Nav */
+nav {
+    height: 50px;
+    background-color: #1f4985;
+}
+.nav-content {
+    max-width: 100%;
+    margin-inline: auto;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline: 8px;
+}
+.nav-option {
+    height: 100%;
+    display: flex;
+    padding: 14px 8px 15px 8px;
+    gap: 10px;
+    margin-top: 0px;
+    font-weight: light;
+    /* background: #1f4985 url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='24' height='24' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='white'/></g></svg>") no-repeat; */
+}
+.fa-v {
+    font-size: 13px;
+}
+
+nav > li > p {
+    color: white;
+}
+/* Hover */
+.nav-option:hover {
+    background-color: #e42529;
+}
+
+
+
+        #outer{
+            display: flex;
+            padding: 10px;
+        }
+
+
+        #container{
+            display: grid;
+            border: solid 1px rgb(187, 187, 187);
+            /* grid-template-columns: repeat(4,1fr);
+            gap: 20px; */
+            margin-top: 5px;
+            width: 79%;
+            /* border: solid 1px red; */
+            padding: 10px;
+        }
+        #container1{
+            height: 70px;
+            /* font-size: 25px; */
+            /* font-weight: bolder; */
+            /* border: solid 1px red; */
+            align-content: space-between;
+            display: flex;
+            justify-content: space-between;
+        }
+        #container2{
+          
+          height: 50px;
+          /* border: solid 1px red; */
+        }
+        #container3{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          /* gap: 20px;
+          margin: 10px; */
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          /* border: solid 1px green; */
+        }
+
+        #filter{
+            
+            /* grid-template-columns: repeat(4,1fr);
+            gap: 20px; */
+            margin-top: 5px;
+            width: 20%;
+            border: solid 1px rgb(187, 187, 187);
+          
+           
+        }
+        #filter1{
+        
+         font-size: 34px;
+         /* border: 1px solid #ccc; */
+         border-bottom: solid 1px rgb(187, 187, 187);;
+          margin: 10px 0;
+          height: 15px;
+          font-weight: 400;
+          padding-bottom: 18px;
+          padding-left: 10px;
+          height: 50px;
+         }
+
+        .innerdiv{
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          padding: 10px;
+            width: 290px;
+        }
+        .innerdiv img{
+            height: 180px;
+            width: 180px;
+        }
+
+         .namediv{
+            font-size: 15px;
+                color: #003380;
+                margin-bottom: 0;
+                height: 40px;
+         }
+         
+         .namediv:hover{
+            color: red;
+         }
+         .text-right{
+           align-items: right;
+           display: flex;
+           justify-content: space-between;
+         }
+         .price{
+           display: flex;
+           /* flex-wrap:wrap ; */
+           /* justify-content: space-between; */
+           /* height: auto; */
+           /* border: solid; */
+           /* padding: 10px; */
+           /* padding-bottom: 10px; */
+           display: flex;
+           margin-bottom: -40px;
+           overflow: hidden;
+            
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* height: auto; */
+    /* border: solid; */
+        /* justify-content: space-around; */
+        /* padding: 10px; */
+        /* padding-bottom: 3px; */
+         }
+         .strikedoffprice{
+          text-decoration: line-through;
+          line-height: 100px;
+          margin-left: 20px;
+         }
+         .dealPrice{
+            line-height: 100px;
+            color: rgb(31, 73, 133);
+                font-size: 15px;
+                font-weight: 600
+            /* margin-right: 20px; */
+            /* font-weight: 600; */
+            /* -webkit-line-clamp: 2;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            display: -webkit-box; */
+
+         }
+         .youSave{
+          color: rgb(67, 160, 71);
+          font-size: 14px;
+          font-weight: 600;
+          /* padding: 3px; */
+             padding-top: 38px;
+            padding-left: 10px;
+            
+         }
+
+    .pl__sort__by {
+    border-radius: 1px;
+    border: 1px solid #ccc;
+    display: flex;
+    margin: 15px;
+    padding: 0 8px;
+    justify-content: right;
+}
+.pl__view{
+  margin: 15px;
+}
+.discription{
+  padding: 10px;
+  /* border: solid 1px yellow; */
+  width:60%;
+  margin-top: 50px;
+  font-size: 18px;
+ 
+/* Calibri,sans-serif;mso-ascii-theme-font:major-latin;mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin */
+}
+.fa-solid .fa-house-chimney{
+border: 1px solid red;
+height: 20px;
+}
+.discription>h2{
+  line-height: 50px;
+}
+.table{
+  /* border: solid 1px pink; */
+  width: 40%;
+  padding: 10px;
+
+}
+.tbody{
+  border: 1px solid #333333;
+}
+
+table.greyGridTable {
+ 
+  border: 1px solid #333333;
+  /* background-color: #ccc; */
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.greyGridTable td, table.greyGridTable th {
+  
+  border: 1px solid #333333;
+  padding: 10px 5px;
+}
+table.greyGridTable tbody td {
+  font-size: 16px;
+  border-left: 1px solid #333333
+}
+table.greyGridTable td:nth-child(even) {
+  background: #EBEBEB;
+  border-left: 1px solid #333333
+}
+table.greyGridTable thead {
+  background:   #ccc; 
+
+  border-bottom: 4px solid #333333;
+}
+table.greyGridTable thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  border-left: 2px solid #333333;
+}
+table.greyGridTable thead th:first-child {
+  border-left: 2px solid #333333;
+}
+
+table.greyGridTable tfoot {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  border-top: 4px solid #333333;
+}
+.priceListTable__data{
+  border:#808080 1px solid ;
+}
+table.greyGridTable tfoot td {
+  font-size: 16px;
+}
+
+.rc-slider-step {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: rgba(0,0,0,0);
+}
+    button{
+      margin: 5px;
+      padding: 5px;
+      justify-content: end;
+    }
+   #slider_seperator{
+     height: 30px;
+     padding: 5px;
+     display: inline-block;
+     font-size: 16px;
+     color: #666;
+     content: icon;
+     /* size: 25px; */
+     /* color: black; */
+   }
+   .price-range-slider{
+     height: 180px;
+     /* border: solid 1px red; */
+   }
+   .dropbtn {
+  width: 100%;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  justify-content: space-between;
+  
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #f1f1f1;
+}
+
+.dropdown {
+ margin: 10px;
+ margin-right: 20px;
+  
+}
+button{
+border: none;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  overflow: auto;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: white;}
+
+.show {display: block;}
+
+* {
+    font-size: 100%;
+}
+.heart{
+  justify-content: space-between;
+  width: 150px;
+  color: #44adfb;
+
+}
+/* .hear{
+  justify-content: space-between;
+  width: 150px;
+  display: flex;
+
+} */
+.yy{
+  display: flex;
+  justify-content: space-between;
+}
+.offeravail{
+ margin-bottom: 7px;
+ padding: 2px;
+ margin-left: 10px;
+ padding-left: 15px;
+ padding-right: 15px;
+ background-color:#effcf5;
+ color: #669d89;
+ border: 0.5px solid #669d89;
+ display: inline-block;
+ border-radius: 15px;
+ margin-bottom: 25px;
+}
+/* #myCheck{
+  height: 15px;
+} */
+    </style>
+</head>
+<body>
+  
+  
+  
+  <header>
+    <!-- <nav> -->
+        <div class="redSearch">
+         <div class="top">
+            <ul>
+                <li> <i class="fa-solid fa-location-dot"></i>
+                   <h4 class="silva">Find a store</h4>
+                </li>
+                   <li>
+                       <h2  class="silva2">|</h2>
+                   </li>
+                <li>
+                    <h4 class="silva">Buying guides</h4>
+                </li>
+                <li>
+                    <h2  class="silva2">|</h2>
+                </li>
+                <li> 
+                    <h4 class="silva">Contact us</h4>
+                </li>
+            </ul>
+         </div>
+
+         <div class="bottom">
+            <a href="/index.html"><img  class="img-cm" src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="logo"> </a>
+             <div class="search">
+                 <input type="text" placeholder="Find your favorite products">
+                 <button class="search-item">Search</button>
+             </div>
+             <div class="cart-login">
+                <ul>
+                    <li> <i class="fa-solid fa-location-dot"></i>
+                       <h4 class="silva">Deliver to Sivasagar 785661</h4>
+                    </li>
+                       <li>
+                           <h1 class="silva2">|</h1>
+                       </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#"><h4 class="silva">Cart</h4></a>
+                    </li>
+                    <li>
+                        <h1 class="silva2">|</h1>
+                    </li>
+                    <li> 
+                        <a href="#"><i class="fa-solid fa-user-large"></i></a>
+                        <a href="/login.html"><h4 class="silva">Login</h4></a>
+                    </li>
+                </ul>
+             </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-content">
+                <li>
+                    <a href="#">
+                    <div class="nav-option" id="nav-op1">
+                       <p>MOBILES & TABLETS</p>
+                       <span class="fa fa-angle-down ml__4"></span>
+                    
+                    </div>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div class="nav-option">
+                        <p>TV & AUDIO</p>
+                        <span class="fa fa-angle-down ml__4"></span>
+                     </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div class="nav-option">
+                        <p>HOME APPLIANCES</p>
+                        <span class="fa fa-angle-down ml__4"></span>
+                     </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div class="nav-option">
+                        <p>COMPUTERS</p>
+                        <span class="fa fa-angle-down ml__4"></span>
+                     </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div class="nav-option">
+                        <p>CAMERAS</p>
+                        <span class="fa fa-angle-down ml__4"></span>
+                     </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div class="nav-option">
+                        <p>KITCHEN APPLIANCES</p>
+                        <span class="fa fa-angle-down ml__4"></span>
+                     </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <div class="nav-option">
+                        <p>PERSONAL CARE</p>
+                        <span class="fa fa-angle-down ml__4"></span>
+                     </div>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                    <div class="nav-option">
+                        <p>ACCESSORIES</p>
+                        <span class="fa fa-angle-down ml__4"></span>
+                     </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>   
+    <section>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.reliancedigital.in/medias/GoPro-Hero-9-Black-CLP-Banner-20-10-2021.jpg?context=bWFzdGVyfGltYWdlc3wxMDE1NTF8aW1hZ2UvanBlZ3xpbWFnZXMvaGIzL2gxMS85NjU4MTgwMTA4MzE4LmpwZ3wwMjgwZGM0YTA2ODYwMGMyYTk4NDNhZWMwNjY0NjVkMmFmODUzZjIzZjg2NTA1N2ExYmUyYThjOTZjNDVjMjJh" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.reliancedigital.in/medias/Binocular-Carousel-Banner-05-05-2021.jpg?context=bWFzdGVyfGltYWdlc3w2NjYzMXxpbWFnZS9qcGVnfGltYWdlcy9oNTcvaDU5Lzk1NTM2MzI2NTc0MzguanBnfDRlOGFlZGI0ZWRjNmFiYmI1NGM5NTQyMjVkYTQ2NzU1M2I0ZDY2OGVjNTk4NWI3MDQ1OWZiNzQ1ZmM5YTViODc" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.reliancedigital.in/medias/Gaming-Laptops-Carousel-Banner-09-06-2021.jpg?context=bWFzdGVyfGltYWdlc3w3Nzc0NnxpbWFnZS9qcGVnfGltYWdlcy9oMTYvaDczLzk1NzI4MTAyOTMyNzguanBnfGM4MjBhZmQzYmExOWIyZDYzZmU4MzI5ZTRlYWRkZjM3OTYwNzg2ZmY1ZmQxMzVmMmRmYjIyNTdkNTEzNjljNTk" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+    </section>
+    <div id="slider_seperator">
+      <p> 🏠 > DSLR Cameras > Product Listing </p> 
+
+    </div>
+    <div id="outer">
+      <div>
+       
+      </div>
+        <div id="filter"> 
+            <div id="filter1">Filter's</div>
+            <h3 style="margin: 10px;">Price</h3>
+            
+              <div class="price-range-slider">
+                <div>
+                  <h4 style="margin: 10px; margin-top: 20px;">Brand</h4>
+                <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> 10000 - 20000 <br> 
+                <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> 20000 - 40000 <br> 
+                <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> 40000 - 60000 <br> 
+                <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> 60000 - above <br> 
+              </div>
+            </div>
+            <div>
+              <h4 style="margin: 10px;">Availability</h4>
+            <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> Exclude out of stock  
+            </div>
+            <div>
+              <h4 style="margin: 10px; margin-top: 20px;">Brand</h4>
+            <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> Nikon <br> 
+            <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> Canon 
+            </div>
+            <div>
+              <h4 style="margin: 10px; margin-top: 20px;">Discount Percent</h4>
+            <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> 40% to 60% <br> 
+            <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> 30% to 40% <br> 
+            <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> 20% to 30% <br> 
+            <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> 10% to 20% <br> 
+          </div>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="display: flex;"> Features <div style="margin-right: 5px;">∨</div></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> Time Lapse Video </a>
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> HDR </a>
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> NFC </a>
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> HDR</a>
+            </div>
+          </div>
+          <!-- <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="display: flex;"> Models <div style="margin-right: 5px;">∨</div></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> D7500 </a>
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> D5600</a>
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> D5300 </a>
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> D3500</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="display: flex;"> Kit Lens Type <div style="margin-right: 5px;">∨</div></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> Time Lapse Video </a>
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> HDR </a>
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> NFC </a>
+              <a href="#home"> <input style="margin: 10px;" type="checkbox" id="myCheck" onclick="myFunction()"> HDR</a>
+            </div> -->
+          <!-- </div> -->
+        </div>
+        <!-- <div>DSLR CAMERAS</div> -->
+        <div id="container">
+          <div id="container1" >
+            <div style="width: 30%;height: 50px;">
+              <h1 style="font-size: 36px;">DSLR Cameras</h1>
+              <p style="font-size: 16px;color: #666;">(Showing 1- 12 products of 12 products) </p>
+            </div>
+            <div>
+              <div class="pl__sort1"><div class="text-right"><div class="pl__sort__by"><span>Sort by :</span><div class="pl__sort__filter"><select id="rel"><option value="relevance">Relevance</option><option value="name-asc">Name(A-Z)</option><option value="name-desc">Name(Z-A)</option><option value="price-asc">Price(Low-High)</option><option value="price-desc">Price(High-Low)</option></select></div></div><div class="pl__view"><ul class="list-inline"><li class=""><span><div class="fa fa-bars"></div></span></li><li class="active"><span><div class="fa fa-th-large"></div></span></li></ul></div></div></div>
+            </div>
+          </div>
+          <div id="container2"></div>
+          <div id="container3"> </div>
+          <div style="display: flex;">
+            <div class="discription">
+               <h2>What Are DSLR Cameras?</h2>
+               <div>A DSLR camera is a digital single-lens reflex camera that captures real-time pictures and displays it on an optical viewfinder. It is commonly referred to as a ‘professional camera’ that takes high quality images and can be used by a broad spectrum of users, from professionals to amateurs.</div>
+               <br>
+               <div>You no longer need to be a photographer to own a DSLR camera. It's a myth that a DSLR camera is worth buying only if you belong to the photography field or have anything to do with shooting videos. On the contrary, DSLR cameras have become such an important tool for many to capture the best moments of life. Not only are the pictures of high definition quality, but also appear very professional.</div>
+               <br>
+               <div>A DSLR camera HD is perfect to take along on family vacations, couple's trips, if you're celebrating a special occasion, portfolio shots, and even for social media. A DSLR camera makes it easy to capture the most special moments in life, with exceptionally good quality high definition photos, especially perfect for those of you who wish to create memory albums.</div>
+               <br>
+               <h2>How to Find the Best DSLR Camera for Beginners</h2>
+               <div>The first step is to figure out your purpose. What kind of photography are you interested in? What will you be using the camera for? On the basis of your purpose, you can find a suitable camera within your budget. Choose a camera based on its features, and make sure you explore a few different lenses and accessories options before you make a final choice.</div>
+               <br>
+               <div>A <b>DSLR</b> camera is not a regular digital camera. The reason why it is so unique and proficient in capturing high definition pictures is because of the multiple photo settings available within the camera that allow you to adjust the quality, background, lighting, resolution, shutter speed, ISO, and pixels before you click a picture. The adjustment of these features make a picture truly high quality, however it is not very difficult to use, thanks to both auto and manual settings.</div>
+               <br>
+               <h1 style="font-size: larger;">Now You Can Find Yourself the Best DSLR Camera Within Budget</h1>
+               <br>
+               <h1> 1.  DSLR camera Under Rs. 50,000</h1>
+               <br>
+               <div>From landscapes to macro shots, you can capture priceless moments with entry level cameras that provide high quality imagery with ergonomic handling, Wi-Fi and Bluetooth connectivity. Delivers supreme autofocus reliability with nightscape modes. Capture Full HD movie recording and dynamic videos.</div>
+               <br>
+               <h1> 2. DSLR camera Under Rs.1,00,000</h1>
+               <br>
+               <div>Best suited for those looking to hone their craft further, you can find some of the best and precise DSLR cameras within this budget. Capture fleeting moments in accurate detail and shoot 4K videos with a combination of exceptional camera quality & innovative technologies.</div>
+               <br>
+               <h1> 3. DSLR camera Under Rs.2,00,000</h1>
+               <br>
+               <div>Meet the best of the best features that can deliver professional quality snapshots at every click. With built-in stereo, extra-wide dynamic range, noise reduction options, and superior shooting stability, capture stunning landscapes, portraits, wedding photos and distant subjects when travelling.</div>
+               <br>
+               <h1> 3. DSLR camera Under Rs.2,00,000</h1>
+               <br>
+               <div>Meet the best of the best features that can deliver professional quality snapshots at every click. With built-in stereo, extra-wide dynamic range, noise reduction options, and superior shooting stability, capture stunning landscapes, portraits, wedding photos and distant subjects when travelling.</div>
+               <br>
+              </div>
+            <div class="table">
+              <h1> DSLR Cameras Price List</h1>
+              <br>
+              <div><table class="greyGridTable">
+                <thead>
+                <tr>
+                <th>S.no</th>
+                <th>Products - DSLR Cameras</th>
+                <th>Price</th>
+                </tr>
+                </thead>
+                <tfoot>
+              
+                </tfoot>
+                <tbody class="tbody">
+                <tr class="tbody">
+                <td >1</td><td style="color: blue;" href="https://www.reliancedigital.in/nikon-d5600-dslr-camera-with-af-p-18-55-mm-af-p-70-300-mm-vr-kit/p/491297413">nikon-d5600-dslr-camera-with-af-p-18-55-mm-af-p-70-300-mm-vr-kit/p/491297413</td><td>₹61,990.00</td></tr>
+                <tr>
+                <td >2</td><td style="color: blue;">nikon-d810-dslr-camera-with-24---120-mm-nikkor-vr-lens-kit/p/491295742</td><td>₹2,16,990.00</td></tr>
+                <tr>
+                <td>3</td><td style="color: blue;">nikon-d5600-dslr-camera-with-af-p-18-55-mm-af-p-70-300-mm-vr-kit/p/491297413</td><td>₹61,990.00</td></tr>
+                <tr>
+                <td>4</td><td style="color: blue;">nikon-d3500-dslr-camera-with-af-p-18-55-mm-af-p-70-300-mm-vr-kit/p/491431009</td><td>₹47,250.00</td></tr>
+                <tr>
+                <td>5</td><td style="color: blue;">nikon-d3500-dslr-camera-with-af-p-18-55-mm-vr-lens-/p/491431008</td><td>₹34,999.00</td></tr>
+                <tr>
+                <td>6</td><td style="color: blue;">nikon-d5300-dslr-camera-with-18-55-mm-and-70-300-mm-dual-lens-kit/p/491115615</td><td>₹38,999.00</td></tr>
+                <tr>
+                <td>7</td><td style="color: blue;">nikon-d7500-dslr-camera-with-af-s-dx-nikkor-18-140mm-f-3-5-5-6g-ed-vr-lens/p/491431245</td><td>₹86,499.00</td></tr>
+                <tr>
+                <td>8</td><td style="color: blue;">nikon-d750-dslr-camera-with-24-120-mm-lens-kit/p/491185880</td><td>₹1,34,999.00</td></tr>
+                <tr>
+                <td>9</td><td style="color: blue;">canon-eos-80d-dslr-camera-with-18-135-mm-lens-kit/p/491277863</td><td>₹93,999.00</td></tr>
+                <tr>
+                <td>10</td><td style="color: blue;">canon-eos-90d-dslr-camera-with-18-135-mm-lens-kit/p/491600445</td><td>₹1,24,990.00</td></tr>
+                <tr>
+               </tr>
+               <tr style="border: #808080;" ><td style="border: #808080" colspan="3" class="priceListTable__data">DSLR Cameras Price List updated on </td></tr>
+                </tbody>
+                </tr>
+                </table></div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+</header>
+  <div id="fcontainer">
+    <div class="box1">
+        <h3>PRODUCT CATEGORIES</h3>
+        
+          <p>Smartphones</p> 
+          <p>Laptops</p>
+          <p>DSLR Cameras</p>
+           <p>Televisions</p>
+           <p>Air Conditioners</p>
+           <p>Refrigerators</p>
+           <p>Kitchen Appliances</p>
+           <p>Accessories</p>
+           <p>Personal Care & Grooming</p>
+           <h3>FOLLOW US</h3>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        
+    </div>
+   <div class="box2 p-box">
+       <h3>SITE INFO</h3>
+
+       <p>About Reliance Digital</p>
+       <p>resQ Services</p>
+       <p>Site Map</p>
+       <p>Gift Cards</p>
+       <p>Corporate Enquires</p>
+       <p>Contact Us</p>
+   </div>
+   <div class="box3 p-box">
+       <h3>RESOURCE CENTRE</h3>
+
+       <p>Product Reviews</p>
+       <p>Buying Guides</p>
+       <p>How Tos</p>
+       <p>Featured Stories</p>
+       <p>Events & Happenings</p>
+   </div>
+   <div class="box4 p-box">
+       <h3>POLICIES</h3>
+
+       <p>Terms of use</p>
+       <p>FAQs</p>
+       <p>Cancellations & Returns</p>
+       <p>Privacy policy</p>
+       <p>E-waste policy</p>
+       <p>EMI Terms & Conditions</p>
+       <p>Pricing and Payments Policy</p>
+       <p>JioMart Maha Cashback T & C</p>
+       <p>RelianceOne Loyalty T & C</p>
+   </div> 
+   <div class="box5 p-box">
+       <h3>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h3>
+       <img src="data:image/png;base64,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" alt="">
+
+      
+       <img src="data:image/png;base64,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" alt="">
+   
+   </div>
+
+</div>
+<div class="box6 p-box">
+   <hr/>
+   <p>© 2022 Reliance Digital. All Rights Reserved.</p>
+
+
+</div>
+</body>
+</html>
+<script>
+ 
+  // box1.style=color.red
+
+  // var box2=document.createElement("div")
+  // box1.setAttribute("class","uppper2div")
+
+    var Camera = [
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/Canon-EOS-200D-II-DSLR-Camera-491431413-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNTYxNnxpbWFnZS9qcGVnfGltYWdlcy9oYWQvaDBjLzkxMzgzODEyNTg3ODIuanBnfDAwNzkzZDk2MWNmNGNjMjE1Y2Q3OTc3MGI5Y2YxNDJkY2EyODNjNmYwNGE2NTY0MGY1MjRkOWM3NDdjYjAzOTM",
+      name: "Canon EOS 200D II DSLR Camera with 18-55 mm and 55-250 mm Dual Lens Kit",
+      dealPrice: "₹61,999.00",
+      strikedoffprice: "₹65,995.00",
+      youSave: "6%(₹3,996)",
+      pagelink:"nikon.html"
+    },
+
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/Nikon-D5600-20DZ-491297413-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2ODM2MXxpbWFnZS9qcGVnfGltYWdlcy9oN2UvaGM5Lzg5NjMwNzAxMzIyNTQuanBnfGUwMWM4YjJhMTJhNjY2N2VlYWY3ZjFhZThmNjNiNmFhZDVjY2Q0MGI2YTI2NzIyODUxNDJmM2Q5ZmU2OGZiNzk",
+      name: "Nikon D5600 DSLR Camera with AF-P 18-55 mm + AF-P 70-300 mm VR Kit",
+      dealPrice: "₹61,990.00",
+      strikedoffprice: "₹66,750.00",
+      youSave: "7%(₹4,760)",
+      pagelink:"nikon.html"
+    
+    },
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/Nikon-D3500-DSLR-Camera-491431009-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4MjUzfGltYWdlL2pwZWd8aW1hZ2VzL2gxNS9oMDEvOTA3MDM1NjI2NzAzOC5qcGd8NGFmZDk5NDM1MjA0NDFkY2Q0M2FmYzY0ZTlmYmUxZTU1MjJiZWE4ZDNkNTI5Mzg4M2NkOWNjZjdhY2MwZDFkZA",
+      name: "Nikon D3500 DSLR Camera with AF-P 18-55 mm + AF-P 70-300 mm VR Kit",
+      dealPrice: "₹47,250.00",
+      strikedoffprice: "₹53,950.00",
+      youSave: "12%(₹6,700)",
+      pagelink:"nikon.html"
+    
+    },
+
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/NIKON-D5300-DSLR-491115615-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4NTA3fGltYWdlL2pwZWd8aW1hZ2VzL2gxMi9oZjUvOTE3NjUxNTExNzA4Ni5qcGd8NDZlMjA3NzYwOTQ3MWQzOTgwMWIxM2M4NjViYWUzZjYyNzQxZGViOWQ1Mzk3OTc0YmY2YzI1MTg4OTlhZDBiYg",
+      name: "NIKON D5300 DSLR Camera with 18-55 mm and 70-300 mm Dual Lens Kit",
+      dealPrice: "₹38,999.00",
+      strikedoffprice: "₹50,450.00",
+      youSave: "23%(₹11,451)",
+      pagelink:"nikon.html"
+    },
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/Nikon-D750-DSLR-Camera-with-24-120-mm-Lens-Kit-491185880-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE3NHxpbWFnZS9qcGVnfGltYWdlcy9oNGEvaGE5Lzg5NjMwNDM0NTkxMDIuanBnfDBmYjAyZDE5OTc4NjIxNGE1NWVjMGFlNGVkNTk4MmUzNDNiM2JiMjg0NmI5ZDk3YWI1M2Q0ZDFiMGI2YmU2ZDg",
+      name: "Nikon D750 DSLR Camera with AF-S DX NIKKOR 18-140mm f/3.5-5.6G ED VR Lens",
+      dealPrice: "₹86,499.00",
+      strikedoffprice: "₹94,950.00",
+      youSave: "9%(₹8,451)",
+      pagelink:"nikon.html"
+    
+    },
+
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/Canon-EOS-80D-DSLR-Camera-with-18-135-mm-Lens-Kit-491277863-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MzU2NnxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDJhLzg5NjMwNDY5OTgwNDYuanBnfGYwMTUwYWM1ODVmMzlkYTU3ZDQwOWY3ODQ4ODUwYjc2OGEyMTg4Y2EyMGI2NTRjNzIxNDA0NDA1Y2M3NWNmZTI",
+      name: "Canon EOS 80D DSLR Camera with 18-135 mm Lens Kit",
+      dealPrice: "₹93,999.00",
+      strikedoffprice: "₹1,05,495.00",
+      youSave: "11%(₹11,496)",
+      pagelink:"nikon.html"
+    },
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/Canon-EOS-90D-DSLR-Camera-491600445-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMzk4M3xpbWFnZS9qcGVnfGltYWdlcy9oMGIvaDcwLzkyMTY0NDg1Mjg0MTQuanBnfDgxNDU5NGU0NDcyNTM5NzI1YmM2ZDllYzM0OTI2NWM1NzU3YjE2MTU4NTEzNDQzNDg1OWQ5ZjM5YmFhODliZWE",
+      name: "Canon EOS 90D DSLR Camera with 18-135 mm Lens Kit",
+      dealPrice: "₹1,24,990.00",
+      strikedoffprice: "₹1,27,495.00",
+      youSave: "2%(₹2,505)"
+    },
+    
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/Nikon-D780-DSLR-Camera-with-24-120-mm-Lens-Kit-491630592-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMTQ0MHxpbWFnZS9qcGVnfGltYWdlcy9oYmQvaGZiLzkyNTE2NDU5NDc5MzQuanBnfGYyZjA4ODU0ZmM5NTU0MzQ4ZDI1YTNhYzhkMGFkNDY2YzZkN2U0ZTc5MGQzNGJlZGJiOTUyNWUxYmIyZWViNTM",
+      name: "Nikon D780 DSLR Camera with 24-120 mm Lens Kit",
+      dealPrice: "₹1,99,990.00",
+      strikedoffprice: "₹2,42,495.00",
+      youSave: "18%(₹42,505)",
+      pagelink:"nikon.html"
+    },
+
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/Canon-EOS-200D-II-DSLR-Camera-491431412-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w5NzUyfGltYWdlL2pwZWd8aW1hZ2VzL2hjMS9oYTkvOTEzODM4Mzg4MDIyMi5qcGd8Mjg1YjZlODNkZTg1OTkyNmEyY2M5OGM5NDZjODU1NGRhNjM3MzQ1YTZlMzdiMGY5YmE4ZTAwZGNiNDkxYTc3YQ",
+      name: "Canon EOS 200D II DSLR Camera with 18-55 mm Lens Kit",
+      dealPrice: "₹56,990.00",
+      strikedoffprice: "₹59,995.00",
+      youSave: "5%(₹3,005)",
+      pagelink:"nikon.html"
+    },
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/Canon-EOS-1500D-DSLR-491362608-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4NDE4MnxpbWFnZS9qcGVnfGltYWdlcy9oNGMvaDE3Lzg5OTM0MDQyNTYyODYuanBnfGEyMzMzZWI0YzAxMjE2MDY1MWM5MjQ3Yzk5NWQwMjk3MzVjYWNhYzYwMmRhNzg0NTAzYTVlZWZlODQ1NzNkZTY",
+      name: "Canon EOS 1500D DSLR Camera with 18-55 mm Lens Kit",
+      dealPrice: "₹36,499.00",
+      strikedoffprice: "₹39,995.00",
+      youSave: "9%(₹3,496)",
+      pagelink:"nikon.html"
+    },
+
+    {
+      image_url:
+        "https://www.reliancedigital.in/medias/Nikon-D810-DSLR-Camera-491295742-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MDU4MHxpbWFnZS9qcGVnfGltYWdlcy9oMTkvaGRjLzk1ODI4MDk5Mzk5OTguanBnfGZmZTQ0MjU0YzU3OGMzMzlkY2JiNWQ4ZGI5YTUwNTlhYWQ3Mjg0MDUzYzgzMmQ1OGQ0MDEwYTBmY2YwODI2MzA",
+      name: "Nikon D810 DSLR Camera with 24 - 120 mm NIKKOR VR Lens Kit",
+      dealPrice: "₹2,16,990.00",
+      strikedoffprice: "₹2,44,950.00",
+      youSave: "11%(₹27,960)",
+      pagelink:"nikon.html"
+    },
+]
+  var Wishlist=JSON.parse(localStorage.getItem("Wishlist"))
+  Camera.map(function(elem)
+{
+  var box2=document.createElement("div")
+  box2.setAttribute("class","uppperdiv")
+
+    var box=document.createElement("div")
+    box.setAttribute("class","innerdiv")
+    box.addEventListener("click",function(){
+        showCameraPage(elem)
+      })
+    var img=document.createElement("img")
+    img.src=elem.image_url
+   
+    var box4=document.createElement("div")
+     box4.setAttribute("class","price")
+
+    var name=document.createElement("p")
+    name.innerText=elem.name
+    name.setAttribute("class","namediv")
+
+    var  dealPrice=document.createElement("p")
+    dealPrice.innerText=elem. dealPrice
+    dealPrice.setAttribute("class","  dealPrice")
+
+    var  strikedoffprice=document.createElement("p")
+    strikedoffprice.innerText=elem. strikedoffprice
+    strikedoffprice.setAttribute("class","  strikedoffprice")
+
+
+    var  youSave=document.createElement("p")
+    youSave.innerText=elem.youSave
+    youSave.setAttribute("class"," youSave")
+  
+    var offer_available=document.createElement("div")
+    offer_available.innerText="Offer Available"
+    offer_available.setAttribute("class","offeravail")
+
+    var y=document.createElement("div")
+    
+    box4.append( dealPrice, strikedoffprice,youSave,)
+
+    var btn=document.createElement("span")
+    btn.innerText="⬜ Compare";
+    btn.setAttribute("class","heart")
+    btn.addEventListener("click",function(){
+    Wishlist(elem)
+    });
+    var btnn=document.createElement("span")
+    btnn.innerText="♥ Wishlist";
+    btnn.setAttribute("class","heart")
+    btnn.addEventListener("click",function(){
+    Wishlist(elem)
+    });
+    y.append(btn,btnn)
+    y.setAttribute("class","yy")
+    box.append(img,name,box4,box2,offer_available,y)
+    
+    document.querySelector("#container3").append(box)
+});
+
+function Wishlist(elem){
+    console.log(elem);
+    Camera.push(elem)
+    localStorage.setItem("Wishlist",JSON.stringify(Wishlist))
+}
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function showCameraPage(elem){
+    console.log(elem)
+    var pagelink=elem.pagelink;
+
+    window.location.href=pagelink;
+}
+</script>
